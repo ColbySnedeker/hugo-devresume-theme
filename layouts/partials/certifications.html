@@ -1,0 +1,16 @@
+
+                            <section class="certifications-section py-3">
+
+                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "certifications" }}</h3>
+
+                                <ul class="list-unstyled resume-certifications-list">
+                                    {{ range .Site.Params.certifications.list }}
+                                    <li class="mb-3">
+                                        <div class="resume-certifications font-weight-bold">{{ .certification }}</div>
+                                        <div class="resume-certifications-org text-muted">{{ .organization }}</div>
+                                        <div class="resume-certifications-time text-muted">{{ .dates }}</div>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+
+                            </section><!--//certifications-section-->
